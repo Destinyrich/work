@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <!--meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="SwiftPayu">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#0076be">
+    <meta name="apple-mobile-web-app-status-bar" content="#ffffff" />
+    <meta name="Keywords" content="Online,savings,SwiftPayu,send,receive,funds,money">
+    <meta name="Description" content="SwiftPayu - Send and receive money globally">
+    <meta name="robots" content="index, follow" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SwiftPayu - Send and receive money globally" />
+    <meta property="og:description" content="SwiftPayu - Send and receive money globally" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="SwiftPayu" />
+    <meta property="og:image" content="android-chrome-512x512.png" />
+    <meta property="og:image:secure_url" content="android-chrome-512x512.png" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <!-- Bootstrap CSS -->
+
+    <link href="style/bootstrap.emin.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/modal.css">
+    <link rel="stylesheet" href="style/mysp.css">
+    <link rel="stylesheet" href="style/popsin.css">
+    <link rel="stylesheet" href="style/dapp.css">
+    <link rel="stylesheet" href="style/translate.css">
+    <link rel="stylesheet" href="style/mystyle.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.emin.js"></script>
+    <script src="js/mysp.js"></script>
+    <!--script src="js/appbase.js"></script-->
+    <script src="js/modal.js"></script>
+
+
+
+
+    <title>SwiftPayu : Exchange Currency</title>
+</head>
+
+<body>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <noscript>
+        <style>
+            body {
+                display: none;
+            }
+        </style>
+        <meta http-equiv="refresh" content="0; url=nojs.php" />
+    </noscript>
+
+    <div id="showit"></div>
+    <div class="prls m-loading">
+        <div class="_loader "></div>
+    </div>
+
+    <div class="row justify-content-left m-0 p-0" style="margin-bottom:70px !important;">
+        <div class="pchh col-md-3 col-lg-3 col-xl-3 bg-white mt-5"
+            style=" border-right: 0px solid #dee2e6!important; left:0;">
+            <div class="pt-5 sticky-top bg-white " style="z-index:0;">
+                <div class="profileBox pt-2 pb-2">
+                    <div class="image-wrapper">
+                        <img src="upics/169339093616.jpg" alt="image" class="imaged  w36">
+                    </div>
+                    <div class="in">
+                        <strong>Ogbanefe eriakpo</strong>
+                        <div class="text-muted">Dormant</div>
+                    </div>
+                    <a href="#" class="btn btn-link btn-icon sidebar-close" data-bs-dismiss="modal">
+                        <ion-icon name="close-outline" role="img" class="md hydrated"
+                            aria-label="close outline"></ion-icon>
+                    </a>
+                </div>
+
+                <div class="sidebar-balance eclip">
+
+                </div>
+
+                <div class="action-group eclip">
+                    <a href="deposit.html" class="action-button">
+                        <div class="in">
+                            <div class="iconbox">
+                                <i class="bi bi-arrow-down"></i>
+                            </div>
+                            Deposit
+                        </div>
+                    </a>
+                    <a href="transfer.html" class="action-button">
+                        <div class="in">
+                            <div class="iconbox">
+                                <i class="bi bi-arrow-up"></i>
+                            </div>
+                            Withdraw
+                        </div>
+                    </a>
+                    <a href="swap.html" class="action-button">
+                        <div class="in">
+                            <div class="iconbox">
+                                <i class="bi bi-arrow-repeat"></i>
+                            </div>
+                            Exchange
+                        </div>
+                    </a>
+                    <a href="cards.html" class="action-button">
+                        <div class="in">
+                            <div class="iconbox">
+                                <i class="bi bi-credit-card-2-back"></i>
+                            </div>
+                            Cards
+                        </div>
+                    </a>
+                </div>
+                <div class="mx-3">
+                    <h2>
+                        <div class=" py-3  border-bottom"><a href="home.html"
+                                class="item active">
+                                <div class="col">
+                                    <i class="bi bi-house-door fs-3"></i>
+                                    <strong>Dashboard</strong>
+                                </div>
+                            </a></div>
+                        <div class="py-3  border-bottom"><a href="swap.html" class="item">
+                                <div class="col">
+                                    <i class="bi bi-columns-gap fs-4"></i>
+                                    <strong>Swap</strong>
+                                </div>
+                            </a></div>
+                        <div class=" py-3 border-bottom"><a href="loans.html"
+                                class="item">
+                                <div class="col">
+                                    <i class="bi bi-wallet fs-4"></i>
+                                    <strong>Loans</strong>
+                                </div>
+                            </a></div>
+                        <div class=" py-3 border-bottom"><a href="cards.html"
+                                class="item mt-3">
+                                <div class="col">
+                                    <i class="bi bi-credit-card-2-back fs-3"></i>
+                                    <strong>My Cards</strong>
+                                </div>
+                            </a></div>
+                        <div class=" py-3 border-bottom"><a href="settings.html"
+                                class="item">
+                                <div class="col">
+                                    <i class="bi bi-gear fs-3"></i>
+                                    <strong>Settings</strong>
+                                </div>
+                            </a></div>
+                        <div class=" py-3 border-bottom"><a href="logout?" class="item">
+                                <div class="col">
+                                    <i class="bi bi-door-closed"></i>
+                                    <strong>Logout</strong>
+                                </div>
+                            </a></div>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6  col-lg-6 col-xl-6 m-0 p-0 " style="float: left;">
+            <div class="appHeader">
+                <div class="left">
+                    <a class="headerButton goBack">
+                        <i class="bi bi-chevron-left"></i>
+                    </a>
+                </div>
+                <div class="pageTitle">
+                    Exchange Currency
+                </div>
+                <div class="right">
+
+                </div>
+            </div>
+            <link rel="stylesheet" href="style/loan.css">
+            <div id="appCapsule">
+
+
+                <form action="../forms/cconvert.php" method="POST" enctype="multipart/form-data"
+                    class="swapam ajaxform m-0 p-0">
+
+                    <div class="section mt-4">
+                        <div class="alert alert-dlight mb-0 mx-0 ttc p-2 mt-0 pt-0" role="alert">Exchange your local
+                            currency for foreign currency</div>
+                        <hr />
+                        <div class="card mt-4">
+                            <div class="card-body">
+                                <div class="form-group basic p-0">
+                                    <div class="exchange-heading">
+                                        <label class="group-label" for="fromAmount">From</label>
+                                        <div class="exchange-wallet-info">
+                                            Balance : <strong class="bif"> EUR 0.00</strong>
+                                        </div>
+                                    </div>
+                                    <div class="exchange-group">
+                                        <div class="input-col"><input type="text"
+                                                class="form-control form-control-lg pe-0 border-0" id="fromAmount"
+                                                placeholder="0" value="9302.00" name="fromAmount" maxlength="10"
+                                                onkeypress="return isNumberKeyy(event, 'fromAmount');" autofocus> </div>
+
+                                        <div class="select-col"><select
+                                                class="form-select form-select-lg currency fromcurrency"
+                                                name="fromcurrency">
+                                                <option value="EUR">EUR</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="exchange-line">
+                            <div class="exchange-icon">
+                                <i name="swap-vertical-outline" role="img" class="md hydrated bi bi-arrow-repeat"
+                                    aria-label="swap vertical outline"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="form-group basic p-0">
+                                    <div class="exchange-heading">
+                                        <label class="group-label" for="toAmount">To</label>
+                                        <div class="exchange-wallet-info">
+
+                                        </div>
+                                    </div>
+                                    <div class="exchange-group">
+                                        <div class="input-col">
+                                            <input type="text" class="form-control form-control-lg pe-0 border-0"
+                                                id="toAmount" name="toAmount" placeholder="0" value="0" maxlength="10"
+                                                readonly>
+                                        </div>
+                                        <div class="select-col">
+                                            <select class="form-select form-select-lg currency tocurrency"
+                                                name="tocurrency">
+                                                <option value="AFN">AFN</option>
+                                                <option value="ALL">ALL</option>
+                                                <option value="DZD">DZD</option>
+                                                <option value="USD">USD</option>
+                                                <option value="EUR" selected="">EUR</option>
+                                                <option value="AOA">AOA</option>
+                                                <option value="XCD">XCD</option>
+                                                <option value="ARS">ARS</option>
+                                                <option value="AMD">AMD</option>
+                                                <option value="AWG">AWG</option>
+                                                <option value="AUD">AUD</option>
+                                                <option value="AZN">AZN</option>
+                                                <option value="BSD">BSD</option>
+                                                <option value="BHD">BHD</option>
+                                                <option value="BDT">BDT</option>
+                                                <option value="BBD">BBD</option>
+                                                <option value="BYR">BYR</option>
+                                                <option value="BZD">BZD</option>
+                                                <option value="XOF">XOF</option>
+                                                <option value="BMD">BMD</option>
+                                                <option value="INR">INR</option>
+                                                <option value="BOB">BOB</option>
+                                                <option value="BAM">BAM</option>
+                                                <option value="BWP">BWP</option>
+                                                <option value="NOK">NOK</option>
+                                                <option value="BRL">BRL</option>
+                                                <option value="BND">BND</option>
+                                                <option value="BGN">BGN</option>
+                                                <option value="BIF">BIF</option>
+                                                <option value="KHR">KHR</option>
+                                                <option value="XAF">XAF</option>
+                                                <option value="CAD">CAD</option>
+                                                <option value="CVE">CVE</option>
+                                                <option value="KYD">KYD</option>
+                                                <option value="CLP">CLP</option>
+                                                <option value="CNY">CNY</option>
+                                                <option value="COP">COP</option>
+                                                <option value="KMF">KMF</option>
+                                                <option value="NZD">NZD</option>
+                                                <option value="CRC">CRC</option>
+                                                <option value="HRK">HRK</option>
+                                                <option value="CUP">CUP</option>
+                                                <option value="ANG">ANG</option>
+                                                <option value="CZK">CZK</option>
+                                                <option value="DKK">DKK</option>
+                                                <option value="DJF">DJF</option>
+                                                <option value="DOP">DOP</option>
+                                                <option value="EGP">EGP</option>
+                                                <option value="ERN">ERN</option>
+                                                <option value="ETB">ETB</option>
+                                                <option value="FKP">FKP</option>
+                                                <option value="FJD">FJD</option>
+                                                <option value="XPF">XPF</option>
+                                                <option value="GMD">GMD</option>
+                                                <option value="GEL">GEL</option>
+                                                <option value="GHS">GHS</option>
+                                                <option value="GIP">GIP</option>
+                                                <option value="GTQ">GTQ</option>
+                                                <option value="GBP">GBP</option>
+                                                <option value="GNF">GNF</option>
+                                                <option value="GYD">GYD</option>
+                                                <option value="HNL">HNL</option>
+                                                <option value="HKD">HKD</option>
+                                                <option value="HUF">HUF</option>
+                                                <option value="ISK">ISK</option>
+                                                <option value="IDR">IDR</option>
+                                                <option value="IRR">IRR</option>
+                                                <option value="IQD">IQD</option>
+                                                <option value="ILS">ILS</option>
+                                                <option value="JMD">JMD</option>
+                                                <option value="JPY">JPY</option>
+                                                <option value="JOD">JOD</option>
+                                                <option value="KZT">KZT</option>
+                                                <option value="KES">KES</option>
+                                                <option value="KPW">KPW</option>
+                                                <option value="KRW">KRW</option>
+                                                <option value="KWD">KWD</option>
+                                                <option value="KGS">KGS</option>
+                                                <option value="LAK">LAK</option>
+                                                <option value="LBP">LBP</option>
+                                                <option value="ZAR">ZAR</option>
+                                                <option value="LRD">LRD</option>
+                                                <option value="LYD">LYD</option>
+                                                <option value="CHF">CHF</option>
+                                                <option value="MOP">MOP</option>
+                                                <option value="MKD">MKD</option>
+                                                <option value="MGA">MGA</option>
+                                                <option value="MWK">MWK</option>
+                                                <option value="MYR">MYR</option>
+                                                <option value="MVR">MVR</option>
+                                                <option value="MRO">MRO</option>
+                                                <option value="MUR">MUR</option>
+                                                <option value="MXN">MXN</option>
+                                                <option value="MDL">MDL</option>
+                                                <option value="MNT">MNT</option>
+                                                <option value="MAD">MAD</option>
+                                                <option value="MZN">MZN</option>
+                                                <option value="MMK">MMK</option>
+                                                <option value="NPR">NPR</option>
+                                                <option value="NIO">NIO</option>
+                                                <option value="NGN">NGN</option>
+                                                <option value="OMR">OMR</option>
+                                                <option value="PKR">PKR</option>
+                                                <option value="PGK">PGK</option>
+                                                <option value="PYG">PYG</option>
+                                                <option value="PEN">PEN</option>
+                                                <option value="PHP">PHP</option>
+                                                <option value="PLN">PLN</option>
+                                                <option value="QAR">QAR</option>
+                                                <option value="RON">RON</option>
+                                                <option value="RUB">RUB</option>
+                                                <option value="RWF">RWF</option>
+                                                <option value="SHP">SHP</option>
+                                                <option value="WST">WST</option>
+                                                <option value="STD">STD</option>
+                                                <option value="SAR">SAR</option>
+                                                <option value="RSD">RSD</option>
+                                                <option value="SCR">SCR</option>
+                                                <option value="SLL">SLL</option>
+                                                <option value="SGD">SGD</option>
+                                                <option value="SBD">SBD</option>
+                                                <option value="SOS">SOS</option>
+                                                <option value="SSP">SSP</option>
+                                                <option value="LKR">LKR</option>
+                                                <option value="SDG">SDG</option>
+                                                <option value="SRD">SRD</option>
+                                                <option value="SZL">SZL</option>
+                                                <option value="SEK">SEK</option>
+                                                <option value="SYP">SYP</option>
+                                                <option value="TWD">TWD</option>
+                                                <option value="TJS">TJS</option>
+                                                <option value="TZS">TZS</option>
+                                                <option value="THB">THB</option>
+                                                <option value="TOP">TOP</option>
+                                                <option value="TTD">TTD</option>
+                                                <option value="TND">TND</option>
+                                                <option value="TRY">TRY</option>
+                                                <option value="TMT">TMT</option>
+                                                <option value="UGX">UGX</option>
+                                                <option value="UAH">UAH</option>
+                                                <option value="AED">AED</option>
+                                                <option value="UYU">UYU</option>
+                                                <option value="UZS">UZS</option>
+                                                <option value="VUV">VUV</option>
+                                                <option value="VEF">VEF</option>
+                                                <option value="VND">VND</option>
+                                                <option value="YER">YER</option>
+                                                <option value="ZMW">ZMW</option>
+                                                <option value="ZWL">ZWL</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="section mt-2">
+                        <div class="row fontsize-caption">
+                            <div class="col">
+
+                            </div>
+                            <div class="col text-end">
+                                Commission rate : <b>5%</b>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </form>
+                <div class="mx-3 mt-3 transparent">
+                    <button type="button" class="btn btn-primary btn-block btn-lg lokka" ttle="Swap Currency"
+                        msg="5% of your requested swap amount will be deducted from your <a href='deposit.htmlfee'>fee balance</a> to finalize the currency exchange. Click 'Okay' to continue">
+                        Continue
+                    </button>
+                </div>
+
+            </div>
+
+            <script src="js/swap.js"></script>
+        </div>
+        <div class="col col-md-3 pchh mt-5 bg-white ">
+            <div class="sticky-top " style="z-index:0;">
+                <div class="pt-5"></div>
+                <div class="mx-3">
+                    <h4>
+                        <div class=" py-3  border-bottom"><a href="home.html"
+                                class="item active">
+                                <div class="col">
+                                    - &nbsp;
+                                    <strong>Account Home</strong>
+                                </div>
+                            </a></div>
+                        <div class="py-3  border-bottom"><a href="transactions.html"
+                                class="item">
+                                <div class="col">
+                                    - &nbsp;
+                                    <strong>Account Transactions</strong>
+                                </div>
+                            </a></div>
+                        <div class=" py-3 border-bottom"><a href="statement.html"
+                                class="item">
+                                <div class="col">
+                                    - &nbsp;
+                                    <strong>Account Statement</strong>
+                                </div>
+                            </a></div>
+                        <div class=" py-3 border-bottom"><a href="transfer.html"
+                                class="item mt-3">
+                                <div class="col">
+                                    - &nbsp;
+                                    <strong>Transfer Money</strong>
+                                </div>
+                            </a></div>
+                        <div class=" py-3 border-bottom"><a href="mailto:" class="item">
+                                <div class="col">
+                                    - &nbsp;
+                                    <strong>Contact Us</strong>
+                                </div>
+                            </a></div>
+                        <div class=" py-3 border-bottom"><a href="settings.html"
+                                class="item">
+                                <div class="col">
+                                    - &nbsp;
+                                    <strong>Edit Account</strong>
+                                </div>
+                            </a></div>
+                        <div class=" py-3">
+                            <div class="col">
+                                <strong>Security Tips</strong>
+                            </div>
+                        </div>
+                        <div class=" py-3 border-bottom">
+                            <div class="col text-muted" style="font-size:13px; font-weight:normal;">
+                                Do not perform financial transactions on public Wifi as they may be unsecure.
+                                <br /><br />
+                                Always make sure no one is watching when inserting your account sensitive details
+                                <br /><br />
+                                SwiftPayu will never ask for your online banking userid and password via email or sms
+                                <br /><br />
+                                Always check your web address. Make sure it is ""
+                            </div>
+                        </div>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-5 pch">
+        <!-- App Bottom Menu -->
+        <div class="appBottomMenu">
+            <a href="home.html" class="item ">
+                <div class="col">
+                    <i class="bi bi-house-door fs-3"></i>
+                    <strong>Dashboard</strong>
+                </div>
+            </a>
+            <a href="swap.html" class="item active">
+                <div class="col">
+                    <i class="bi bi-columns-gap fs-4"></i>
+                    <strong>Swap</strong>
+                </div>
+            </a>
+
+            <a href="loans.html" class="item ">
+                <div class="col">
+                    <i class="bi bi-wallet fs-4"></i>
+                    <strong>Loans</strong>
+                </div>
+            </a>
+
+
+            <a href="cards.html" class="item ">
+                <div class="col">
+                    <i class="bi bi-credit-card-2-back fs-3"></i>
+                    <strong>My Cards</strong>
+                </div>
+            </a>
+            <a href="settings.html" class="item ">
+                <div class="col">
+                    <i class="bi bi-gear fs-3"></i>
+                    <strong>Settings</strong>
+                </div>
+            </a>
+        </div>
+        <!-- * App Bottom Menu -->
+    </div>
+    </div>
+    <script>$(function () {
+            $('.shc').on('click', function () {
+                $.alert('<br/><div class=""></div><div class="pb-0 mb-2 ttc ffoot fw-bold btn btn-light"><a href="mailto:" class="tnn"><i class="bi bi-envelope-fill"></i> Via Email</a></div><div class="pt-0 pb-0 ttc ffoot fw-bold btn btn-light mb-2"><a href="https://api.whatsapp.com/send?phone=639357503403&text=Hello%21%20SwiftPayu%20" target="_blank" class="noload"><i class="bi bi-whatsapp"></i> Via WhatsApp</a></div>', "Contact Us");
+            });
+        });</script>
+    <a class="tnn shc noload">
+        <div class="fhelp" style="bottom: 70px;padding-top: 6px;color:#fff;width: 45px;
+height: 45px;"><i class="bi bi-question-lg" style="color:white;font-size:22px;"></i>
+            <div class="tfs" style="position: relative;
+top: -16px;padding-top:2px;">Help</div>
+        </div>
+    </a>
+    <script src="js/fnc.js"></script>
+    <script src="js/new.js"></script>
+    <script src="js/usr.js"></script>
+
+</body>
+
+</html>

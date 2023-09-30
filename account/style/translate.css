@@ -1,0 +1,60 @@
+.transalign{
+    position:absolute;
+    right:1.5rem;
+    top: 25px;
+        z-index: 2;
+    }
+    .goog-logo-link {display:none !important;}
+    .goog-te-gadget {color: transparent !important; font-size:0 !important;}
+    .goog-te-gadget span {visibility:hidden !important; display:none !important;}
+    .skiptranslate iframe {visibility:hidden !important; display:none !important;}
+    .goog-te-gadget .goog-te-combo {
+        font-size: 0.8rem !important;
+        line-height: 1.0 !important;
+        background-color: #fff !important;
+        border: 0.1rem solid #ced4da42 !important;
+        border-radius: 0.2rem !important;
+        color: #525f80 !important;
+        font-family: Open Sans,Helvetica Neue,Helvetica,Calibri,Arial Unicode MS,sans-serif !important;
+        padding: 0.5rem !important;
+        text-align: center !important;
+        margin: 0 !important;
+        width: 150px !important;
+    }
+    #goog-gt-tt{ visibility:hidden !important; display: none !important;}
+    .goog-tooltip { visibility:hidden !important; display: none !important;}
+    .goog-tooltip:hover { visibility:hidden !important; display: none !important;}
+    .goog-text-highlight {
+    background-color: transparent !important;
+    border: none !important; 
+    box-shadow: none !important;
+    }
+    div#google_translate_element div.goog-te-gadget-simple {
+    border: none;background-color: #fff;}
+    div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value:hover {
+    text-decoration: none;}
+    div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span {
+     color: #3169aa; font-weight:bold;}
+    div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span:hover {
+    color: black;}
+    .goog-te-gadget-icon {
+    display: none !important;
+    }
+    div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="color: rgb(213, 213, 213);"] {
+    display: none;}
+    /* after clicked/touched */
+    div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="color: rgb(118, 118, 118);"] {
+    display: none; }
+    /* on page load (not yet touched or clicked) */
+    div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="color: rgb(155, 155, 155);"] {
+    display: none; }
+    /* Remove span with left border line | (next to the arrow) in Chrome & Firefox */
+    div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="border-left: 1px solid rgb(187, 187, 187);"] {display: none;}
+    /* Remove span with left border line | (next to the arrow) in Edge & IE11 */
+    div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="border-left-color: rgb(187, 187, 187); border-left-width: 1px; border-left-style: solid;"] {
+    display: none; }
+    .goog-te-banner-frame.skiptranslate {
+    display: none !important; }
+    body { top: 0px !important; }  
+    SELECT.goog-te-combo:hover{ color:#1369aa; font-weight:bold; } 
+    .goog-te-combo .select-selected { background-color: DodgerBlue; }

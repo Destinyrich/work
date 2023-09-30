@@ -1,0 +1,233 @@
+<html lang="en" class="pixel-ratio-1">
+
+<head>
+    <!-- Required meta tags -->
+    <!--meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="SwiftPayu">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#0076be">
+    <meta name="apple-mobile-web-app-status-bar" content="#ffffff">
+    <meta name="Keywords" content="Online,savings,SwiftPayu,send,receive,funds,money">
+    <meta name="Description" content="SwiftPayu - Send and receive money globally">
+    <meta name="robots" content="index, follow">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SwiftPayu - Send and receive money globally">
+    <meta property="og:description" content="SwiftPayu - Send and receive money globally">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="SwiftPayu">
+    <meta property="og:image" content="android-chrome-512x512.png">
+    <meta property="og:image:secure_url" content="android-chrome-512x512.png">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <!-- Bootstrap CSS -->
+
+    <link href="style/bootstrap.emin.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/modal.css">
+    <link rel="stylesheet" href="style/mysp.css">
+    <link rel="stylesheet" href="style/popsin.css">
+    <link rel="stylesheet" href="style/dapp.css">
+    <link rel="stylesheet" href="style/translate.css">
+    <link rel="stylesheet" href="style/mystyle.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.emin.js"></script>
+    <script src="js/mysp.js"></script>
+    <!--script src="js/appbase.js"></script-->
+    <script src="js/modal.js"></script>
+
+
+
+
+    <title>SwiftPayu : Account Home</title>
+</head>
+
+<body>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <noscript>
+        <style>
+            body {
+                display: none;
+            }
+        </style>
+        <meta http-equiv="refresh" content="0; url=nojs.php" />
+    </noscript>
+
+    <div id="showit"></div>
+    <div class="prls m-loading d-none">
+        <div class="_loader "></div>
+    </div>
+
+    <script src="js/otp.js"></script>
+    <link rel="stylesheet" href="style/otp.css">
+    <style>
+        .fhelp {
+            display: none;
+        }
+    </style>
+    <section class="account-section position-relative pt-0 pb-0">
+        <center>
+            <div class="container vh-100 w-100 p-0 m-0">
+                <div class="row justify-content-center h-100 ">
+                    <div class="col-xl-5 col-lg-6 col-md-7 h-100 account-form px-0 "
+                        style="background-color:#ffffff75;">
+                        <div class="ms-3 mt-3" align="left">
+                            <a href="logout?" class="headerButton"><i class="bi bi-chevron-left fs-2"></i> Logout</a>
+                        </div>
+                        <div id="appCapsule" align="left" class="pb-0 pt-2">
+                            <div class="section mt-0 mx-3">
+                                <!--h1 class="page-title">Enter Your Account Pin</h1-->
+
+                                <center>
+                                    <div>
+                                        <div class="irow mb-2">
+                                            <div class="iquarter icell">
+                                                <div class="inner isquareBox shadow-sm">
+                                                    <div class="icontent">
+                                                        <div class="icenterBox icenter p-1 bg-white"><img
+                                                                src="upics/169339093616.jpg" alt="image" class="w-100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="device text-dark mt-4 pt-4">
+                                        <div class="device-bezel">
+                                            <div class="device-viewport">
+                                                <!-- Begin custom content -->
+
+                                                <div class="containerd">
+
+                                                    <div class="pin-display">
+                                                        <div class="circle-lock--container">
+                                                            <div class="circle-lock">
+                                                                <i class="bi bi-lock-fill fs-1"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="confirmation-dots mb-2">
+                                                            <form action="../forms/2fa2.php" method="POST"
+                                                                enctype="multipart/form-data" class="ajaxform scode_">
+                                                                <div class="px-3">
+
+                                                                    <div class="row justify-content-left p-0 m-0 ">
+
+                                                                        <input
+                                                                            class="d-inline-block tfs ffont form-control  if22 m-1 rounded-circle border-dark"
+                                                                            style="width:50px; height:50px; font-size:25px !important; font-weight:bold;"
+                                                                            type="text" name="acode1" maxlength="1"
+                                                                            autofocus="">
+
+                                                                        <input
+                                                                            class="d-inline-block tfs ffont form-control  if22 m-1 rounded-circle border-dark"
+                                                                            style="width:50px; height:50px; font-size:25px !important; font-weight:bold;"
+                                                                            type="text" name="acode2" maxlength="1">
+
+                                                                        <input
+                                                                            class="d-inline-block tfs ffont form-control  if22 m-1 rounded-circle border-dark"
+                                                                            style="width:50px; height:50px; font-size:25px !important; font-weight:bold;"
+                                                                            type="text" name="acode3" maxlength="1">
+
+                                                                        <input
+                                                                            class="d-inline-block tfs ffont form-control  if22 m-1 rounded-circle border-dark"
+                                                                            style="width:50px; height:50px; font-size:25px !important; font-weight:bold;"
+                                                                            type="text" name="acode4" maxlength="1">
+
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="keypad">
+                                                            <div class="keypad--row">
+                                                                <div class="keypad--button" data-value="1">1</div>
+                                                                <div class="keypad--button" data-value="2">2</div>
+                                                                <div class="keypad--button" data-value="3">3</div>
+                                                            </div>
+                                                            <div class="keypad--row">
+                                                                <div class="keypad--button" data-value="4">4</div>
+                                                                <div class="keypad--button" data-value="5">5</div>
+                                                                <div class="keypad--button" data-value="6">6</div>
+                                                            </div>
+                                                            <div class="keypad--row">
+                                                                <div class="keypad--button" data-value="7">7</div>
+                                                                <div class="keypad--button" data-value="8">8</div>
+                                                                <div class="keypad--button" data-value="9">9</div>
+                                                            </div>
+                                                            <div class="keypad--row">
+                                                                <div class="keypad--button keyboard--button__back-arrow"
+                                                                    data-value="-1"><i class="bi bi-arrow-left"></i>
+                                                                </div>
+                                                                <div class="keypad--button" data-value="0">0</div>
+                                                                <div class="keypad--button keyboard--button__x"
+                                                                    data-value="-2">x</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <center>
+                                                    <div class="d-inline rcodei_">
+                                                        <form action="../forms/2fa2.php" method="POST"
+                                                            enctype="multipart/form-data"
+                                                            class="ajaxform rcode_ d-inline">
+                                                            <input type="hidden" value="1" name="rcode">
+                                                            <button type="submit"
+                                                                class="btn btn-text-primary shadowed btn-lg rcode_  mt-0 mx-3 mb-4 ">Resend
+                                                                Pin</button>
+                                                        </form>
+                                                    </div>
+                                                    <button
+                                                        class="btn btn-primary btn-lg bshadow text-center ffont mt-0 mx-3 mb-4 conti"
+                                                        style="" type="submit"> Continue </button>
+
+                                                </center>
+                                                <!-- end custom content -->
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </center>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </section>
+    <script>$(function () {
+            $('.shc').on('click', function () {
+                $.alert('<br/><div class=""></div><div class="pb-0 mb-2 ttc ffoot fw-bold btn btn-light"><a href="mailto:support@swiftpayu.com" class="tnn"><i class="bi bi-envelope-fill"></i> Via Email</a></div><div class="pt-0 pb-0 ttc ffoot fw-bold btn btn-light mb-2"><a href="https://api.whatsapp.com/send?phone=639357503403&text=Hello%21%20SwiftPayu%20" target="_blank" class="noload"><i class="bi bi-whatsapp"></i> Via WhatsApp</a></div>', "Contact Us");
+            });
+        });</script>
+    <a class="tnn shc noload">
+        <div class="fhelp" style="bottom: 70px;padding-top: 6px;color:#fff;width: 45px;
+height: 45px;"><i class="bi bi-question-lg" style="color:white;font-size:22px;"></i>
+            <div class="tfs" style="position: relative;
+top: -16px;padding-top:2px;">Help</div>
+        </div>
+    </a>
+    <script src="js/fnc.js"></script>
+    <script src="js/new.js"></script>
+    <script src="js/usr.js"></script>
+
+
+</body>
+
+</html>

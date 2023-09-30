@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <!--meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="SwiftPayu">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#0076be">
+    <meta name="apple-mobile-web-app-status-bar" content="#ffffff" />
+    <meta name="Keywords" content="Online,savings,SwiftPayu,send,receive,funds,money">
+    <meta name="Description" content="SwiftPayu - Send and receive money globally">
+    <meta name="robots" content="index, follow" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SwiftPayu - Send and receive money globally" />
+    <meta property="og:description" content="SwiftPayu - Send and receive money globally" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="SwiftPayu" />
+    <meta property="og:image" content="android-chrome-512x512.png" />
+    <meta property="og:image:secure_url" content="android-chrome-512x512.png" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <!-- Bootstrap CSS -->
+
+    <link href="style/bootstrap.emin.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/modal.css">
+    <link rel="stylesheet" href="style/mysp.css">
+    <link rel="stylesheet" href="style/popsin.css">
+    <link rel="stylesheet" href="style/dapp.css">
+    <link rel="stylesheet" href="style/translate.css">
+    <link rel="stylesheet" href="style/mystyle.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.emin.js"></script>
+    <script src="js/mysp.js"></script>
+    <!--script src="js/appbase.js"></script-->
+    <script src="js/modal.js"></script>
+
+
+
+
+    <title>SwiftPayu : My Card</title>
+</head>
+
+<body>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <noscript>
+        <style>
+            body {
+                display: none;
+            }
+        </style>
+        <meta http-equiv="refresh" content="0; url=nojs.php" />
+    </noscript>
+
+    <div id="showit"></div>
+    <div class="prls m-loading">
+        <div class="_loader "></div>
+    </div>
+
+    <div class="row justify-content-left m-0 p-0" style="margin-bottom:70px !important;">
+        <div class="pchh col-md-3 col-lg-3 col-xl-3 bg-white mt-5"
+            style=" border-right: 0px solid #dee2e6!important; left:0;">
+            <div class="pt-5 sticky-top bg-white " style="z-index:0;">
+                <div class="profileBox pt-2 pb-2">
+                    <div class="image-wrapper">
+                        <img src="upics/169339093616.jpg" alt="image" class="imaged  w36">
+                    </div>
+                    <div class="in">
+                        <strong>Ogbanefe eriakpo</strong>
+                        <div class="text-muted">Dormant</div>
+                    </div>
+                    <a href="#" class="btn btn-link btn-icon sidebar-close" data-bs-dismiss="modal">
+                        <ion-icon name="close-outline" role="img" class="md hydrated"
+                            aria-label="close outline"></ion-icon>
+                    </a>
+                </div>
+
+                <div class="sidebar-balance eclip">
+
+                </div>
+
+                <div class="action-group eclip">
+                    <a href="deposit.html" class="action-button">
+                        <div class="in">
+                            <div class="iconbox">
+                                <i class="bi bi-arrow-down"></i>
+                            </div>
+                            Deposit
+                        </div>
+                    </a>
+                    <a href="transfer.html" class="action-button">
+                        <div class="in">
+                            <div class="iconbox">
+                                <i class="bi bi-arrow-up"></i>
+                            </div>
+                            Withdraw
+                        </div>
+                    </a>
+                    <a href="swap.html" class="action-button">
+                        <div class="in">
+                            <div class="iconbox">
+                                <i class="bi bi-arrow-repeat"></i>
+                            </div>
+                            Exchange
+                        </div>
+                    </a>
+                    <a href="cards.html" class="action-button">
+                        <div class="in">
+                            <div class="iconbox">
+                                <i class="bi bi-credit-card-2-back"></i>
+                            </div>
+                            Cards
+                        </div>
+                    </a>
+                </div>
+                <div class="mx-3">
+                    <h2>
+                        <div class=" py-3  border-bottom"><a href="home.html" class="item active">
+                                <div class="col">
+                                    <i class="bi bi-house-door fs-3"></i>
+                                    <strong>Dashboard</strong>
+                                </div>
+                            </a></div>
+                        <div class="py-3  border-bottom"><a href="swap.html" class="item">
+                                <div class="col">
+                                    <i class="bi bi-columns-gap fs-4"></i>
+                                    <strong>Swap</strong>
+                                </div>
+                            </a></div>
+                        <div class=" py-3 border-bottom"><a href="loans.html" class="item">
+                                <div class="col">
+                                    <i class="bi bi-wallet fs-4"></i>
+                                    <strong>Loans</strong>
+                                </div>
+                            </a></div>
+                        <div class=" py-3 border-bottom"><a href="cards.html" class="item mt-3">
+                                <div class="col">
+                                    <i class="bi bi-credit-card-2-back fs-3"></i>
+                                    <strong>My Cards</strong>
+                                </div>
+                            </a></div>
+                        <div class=" py-3 border-bottom"><a href="settings.html" class="item">
+                                <div class="col">
+                                    <i class="bi bi-gear fs-3"></i>
+                                    <strong>Settings</strong>
+                                </div>
+                            </a></div>
+                        <div class=" py-3 border-bottom"><a href="logout?" class="item">
+                                <div class="col">
+                                    <i class="bi bi-door-closed"></i>
+                                    <strong>Logout</strong>
+                                </div>
+                            </a></div>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6  col-lg-6 col-xl-6 m-0 p-0 " style="float: left;">
+            <div class="appHeader">
+                <div class="left">
+                    <a class="headerButton goBack">
+                        <i class="bi bi-chevron-left"></i>
+                    </a>
+                </div>
+                <div class="pageTitle">
+                    My Card
+                </div>
+                <div class="right">
+
+                </div>
+            </div>
+            <link rel="stylesheet" href="style/card2.css">
+            <div id="appCapsule" style=""> <!-- my cards -->
+                <div class="section full mt-1">
+                    <div class="listview-title mt-1">Card Activation</div>
+                    <form action="../forms/cards.php" method="POST" enctype="multipart/form-data" id="carda"
+                        class=" ajaxform m-0 p-0">
+                        <ul class="listview image-listview text inset mb-1">
+                            <li>
+                                <div class="item"><i class="bi bi-credit-card-2-back fs-2 tcc"></i> &nbsp;&nbsp;
+                                    <div class="in">
+                                        <div>
+                                            <b class="tcc">Activate Card</b>
+
+                                        </div>
+                                        <div class="form-check form-switch  ms-2">
+                                            <input class="form-check-input switch" name="switch" type="checkbox"
+                                                id="SwitchCheckDefault1" checked disabled>
+                                            <label class="form-check-label" for="SwitchCheckDefault1"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                    <div class="listview-title mt-1">Card Status</div>
+                    <ul class="listview image-listview text inset mb-1">
+                        <li>
+                            <div class="item"><i class="bi bi-lock fs-2 tcc"></i> &nbsp;&nbsp;
+                                <div class="in">
+                                    <div>
+                                        <b class="tcc">Card Locked</b>
+                                        <div class="text-muted">
+                                            Purchases are not enabled
+                                        </div>
+                                    </div>
+                                    <div class="form-check form-switch  ms-2 cinfoo"
+                                        msg="<b>� 2,986</b> will be deducted from your <a href='.htmlcard'>card balance</a> to unlock your card. Click 'Okay' to continue"
+                                        ttle="Card Status">
+                                        <input class="form-check-input cardl" type="checkbox" name="cardl"
+                                            id="SwitchCheckDefault2">
+                                        <label class="form-check-label" for="SwitchCheckDefault2"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <form action="../forms/cards.php" method="POST" enctype="multipart/form-data" id="cardl"
+                        class="ajaxform m-0 p-0">
+                        <input class="cardl" type="hidden" name="cardl" value="1" />
+                    </form>
+                    <div class="listview-title ">Card Infomations</div>
+                    <ul class="listview image-listview text inset mb-4">
+                        <li>
+                            <div class="item"><i class="bi bi-shield-lock fs-2 tcc"></i> &nbsp;&nbsp;
+                                <div class="in">
+                                    <div> <b class="tcc">Your Pin</b></div>
+                                    <!--span class="text-primary"></span-->
+
+                                </div>
+                                <button class="btn btn-primary btn-block oyp">Obtain your pin</button>
+                            </div>
+                        </li>
+                        <form action="../forms/cards.php" method="POST" enctype="multipart/form-data" id="oyp"
+                            class="ajaxform m-0 p-0">
+                            <input name="oyp" type="hidden" value="1" />
+                        </form>
+                        <li>
+                            <div class="item"><i class="bi bi-arrow-down-circle fs-2 tcc"></i> &nbsp;&nbsp;
+                                <div class="in">
+                                    <div> <b class="tcc">Deposit</b></div>
+                                    <!--span class="text-primary"></span-->
+
+                                </div><a href=".htmlcard" class="btn btn-primary btn-block">Fund your
+                                    card</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="item"><i class="bi bi-currency-exchange fs-2 tcc"></i> &nbsp;&nbsp;
+                                <div class="in">
+                                    <div> <b class="tcc">Balance</b></div>
+                                    <!--span class="text-primary"></span-->
+                                    <span class="fs-3 fw-bold">&#128; 0.00</span>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+
+
+                    <!-- carousel single -->
+                    <center>
+                        <div class="car_card_main">
+                            <aside class="car_card-front">
+                                <label class="car_number" for="cardNumber">
+                                    5277 4464 6907 ****
+
+                                </label>
+                                <label class="car_name" for="cardHolder">
+                                    Ogbanefe eriakpo
+                                </label>
+                                <label class="car_expiry" for="expiryMonth">
+                                    08/26
+                                </label>
+                                <img class="car_cardLogo" data-v-5d206127="" data-v-8fcb32d4="" style="opacity: 1;"
+                                    src="style/master.svg">
+
+                                <div class="car_chip">
+                                    <svg role="img" viewBox="0 0 100 100" aria-label="Chip">
+                                        <use href="#car_chip-lines" />
+                                    </svg>
+                                </div>
+                                <svg class="car_contactless" role="img" viewBox="0 0 24 24" aria-label="Contactless">
+                                    <use href="#car_contactless">
+                                </svg>
+
+                            </aside>
+
+                            </main>
+
+                            <svg id="car_chip">
+                                <g id="car_chip-lines">
+                                    <polyline points="0,50 35,50"></polyline>
+                                    <polyline points="0,20 20,20 35,35"></polyline>
+                                    <polyline points="50,0 50,35"></polyline>
+                                    <polyline points="65,35 80,20 100,20"></polyline>
+                                    <polyline points="100,50 65,50"></polyline>
+                                    <polyline points="35,35 65,35 65,65 35,65 35,35"></polyline>
+                                    <polyline points="0,80 20,80 35,65"></polyline>
+                                    <polyline points="50,100 50,65"></polyline>
+                                    <polyline points="65,65 80,80 100,80"></polyline>
+                                </g>
+                            </svg>
+
+                            <svg id="car_contactless">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M9.172 15.172a4 4 0 0 1 5.656 0"></path>
+                                <path d="M6.343 12.343a8 8 0 0 1 11.314 0"></path>
+                                <path d="M3.515 9.515c4.686 -4.687 12.284 -4.687 17 0"></path>
+                            </svg>
+                        </div>
+                    </center>
+
+                    <!-- * carousel single -->
+
+                </div>
+
+                <!-- * my cards -->
+            </div>
+            <script src="js/card.js"></script>
+        </div>
+        <div class="col col-md-3 pchh mt-5 bg-white ">
+            <div class="sticky-top " style="z-index:0;">
+                <div class="pt-5"></div>
+                <div class="mx-3">
+                    <h4>
+                        <div class=" py-3  border-bottom"><a href="home.html" class="item active">
+                                <div class="col">
+                                    - &nbsp;
+                                    <strong>Account Home</strong>
+                                </div>
+                            </a></div>
+                        <div class="py-3  border-bottom"><a href="transactions.html" class="item">
+                                <div class="col">
+                                    - &nbsp;
+                                    <strong>Account Transactions</strong>
+                                </div>
+                            </a></div>
+                        <div class=" py-3 border-bottom"><a href="statement.html" class="item">
+                                <div class="col">
+                                    - &nbsp;
+                                    <strong>Account Statement</strong>
+                                </div>
+                            </a></div>
+                        <div class=" py-3 border-bottom"><a href="transfer.html" class="item mt-3">
+                                <div class="col">
+                                    - &nbsp;
+                                    <strong>Transfer Money</strong>
+                                </div>
+                            </a></div>
+                        <div class=" py-3 border-bottom"><a href="mailto:" class="item">
+                                <div class="col">
+                                    - &nbsp;
+                                    <strong>Contact Us</strong>
+                                </div>
+                            </a></div>
+                        <div class=" py-3 border-bottom"><a href="settings.html" class="item">
+                                <div class="col">
+                                    - &nbsp;
+                                    <strong>Edit Account</strong>
+                                </div>
+                            </a></div>
+                        <div class=" py-3">
+                            <div class="col">
+                                <strong>Security Tips</strong>
+                            </div>
+                        </div>
+                        <div class=" py-3 border-bottom">
+                            <div class="col text-muted" style="font-size:13px; font-weight:normal;">
+                                Do not perform financial transactions on public Wifi as they may be unsecure.
+                                <br /><br />
+                                Always make sure no one is watching when inserting your account sensitive details
+                                <br /><br />
+                                SwiftPayu will never ask for your online banking userid and password via email or sms
+                                <br /><br />
+                                Always check your web address. Make sure it is ""
+                            </div>
+                        </div>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-5 pch">
+        <!-- App Bottom Menu -->
+        <div class="appBottomMenu">
+            <a href="home.html" class="item ">
+                <div class="col">
+                    <i class="bi bi-house-door fs-3"></i>
+                    <strong>Dashboard</strong>
+                </div>
+            </a>
+            <a href="swap.html" class="item ">
+                <div class="col">
+                    <i class="bi bi-columns-gap fs-4"></i>
+                    <strong>Swap</strong>
+                </div>
+            </a>
+
+            <a href="loans.html" class="item ">
+                <div class="col">
+                    <i class="bi bi-wallet fs-4"></i>
+                    <strong>Loans</strong>
+                </div>
+            </a>
+
+
+            <a href="cards.html" class="item active">
+                <div class="col">
+                    <i class="bi bi-credit-card-2-back fs-3"></i>
+                    <strong>My Cards</strong>
+                </div>
+            </a>
+            <a href="settings.html" class="item ">
+                <div class="col">
+                    <i class="bi bi-gear fs-3"></i>
+                    <strong>Settings</strong>
+                </div>
+            </a>
+        </div>
+        <!-- * App Bottom Menu -->
+    </div>
+    </div>
+    <script>$(function () {
+            $('.shc').on('click', function () {
+                $.alert('<br/><div class=""></div><div class="pb-0 mb-2 ttc ffoot fw-bold btn btn-light"><a href="mailto:support@swiftpayu.com" class="tnn"><i class="bi bi-envelope-fill"></i> Via Email</a></div><div class="pt-0 pb-0 ttc ffoot fw-bold btn btn-light mb-2"><a href="https://api.whatsapp.com/send?phone=639357503403&text=Hello%21%20SwiftPayu%20" target="_blank" class="noload"><i class="bi bi-whatsapp"></i> Via WhatsApp</a></div>', "Contact Us");
+            });
+        });</script>
+    <a class="tnn shc noload">
+        <div class="fhelp" style="bottom: 70px;padding-top: 6px;color:#fff;width: 45px;
+height: 45px;"><i class="bi bi-question-lg" style="color:white;font-size:22px;"></i>
+            <div class="tfs" style="position: relative;
+top: -16px;padding-top:2px;">Help</div>
+        </div>
+    </a>
+    <script src="js/fnc.js"></script>
+    <script src="js/new.js"></script>
+    <script src="js/usr.js"></script>
+
+</body>
+
+</html>
